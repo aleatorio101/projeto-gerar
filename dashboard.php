@@ -114,8 +114,8 @@ function listarResiduos($usuario_id) {
             echo "<td>" . $row['armazenamento'] . "</td>";
             echo "<td>" . $row['descarte'] . "</td>";
             echo "<td>";
-            echo "<a href='editar_residuo.php?id=" . $row['id'] . "'>Editar</a> | ";
-            echo "<a href='excluir_residuo.php?id=" . $row['id'] . "'>Excluir</a>";
+            echo "<a href='editar_residuo.php?id=" . $row['id'] . "' class='acao-residuo botao-verde'>Editar</a> | ";
+            echo "<a href='excluir_residuo.php?id=" . $row['id'] . "' class='acao-residuo botao-verde'>Excluir</a>";
             echo "</td>";
             echo "</tr>";
         }

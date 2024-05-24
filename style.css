@@ -49,6 +49,27 @@ label {
     display: block;
     margin-bottom: 5px;
 }
+.botao-verde {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 2px;
+    background-color: #4CAF50; /* Cor verde */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+
+.botao-verde:hover {
+    background-color: #218838; 
+}
+
+
+.botao-verde:active {
+    background-color: #1e7e34; 
+}
+
 .campo-formulario {
     max-width: 300px;
     margin: 0 auto 15px auto;
@@ -61,6 +82,7 @@ label {
 .cadastro input[type="text"],
 .cadastro input[type="email"],
 .cadastro input[type="password"]
+
 {
     width: 90%;
     padding: 10px;
@@ -69,10 +91,16 @@ label {
     border-radius: 3px;
 }
 
+.acao-residuo {
+    color: black;
+    text-decoration: none;  
+  }
+
 input[type="number"],
+input[type="text"],
 textarea,
 select {
-    width: 100%; /* Largura padrão para outros tipos de input */
+    width: 90%; /* Largura padrão para outros tipos de input */
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
