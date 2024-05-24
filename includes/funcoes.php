@@ -25,5 +25,39 @@ function logarUsuario($email, $senha) {
     return false;
 }
 
-// Adicione outras funções para atualizar perfil, recuperar dados do usuário, etc.
+function editarResiduo($id, $dados) {
+    global $conn;
+
+    $sql = "UPDATE residuos SET ";
+    $campos = [];
+
+    foreach ($dados as $coluna => $valor) {
+        // Verifique se a coluna 'data_cadastro' está sendo atualizada
+        if ($coluna == 'data_cadastro') {
+            // Formate a data para o formato MySQL (YYYY-MM-DD HH:MM:SS)
+            $valor = date('Y-m-d H:i:s', strtotime($valor));
+        }
+
+        $campos[] = "$coluna = '$valor'";
+    }
+
+    $sql .= implode(', ', $campos);
+    $sql .= " WHERE id = $id";
+
+    return $conn->query($sql);
+}
+
+// Função para obter os dados de um resíduo pelo ID
+function obterResiduoPorId($id) {
+    global $conn;
+    $sql = "SELECT * FROM residuos WHERE id = $id";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        return $result->fetch_assoc();
+    } else {
+        return false; 
+    }
+}
+
 ?>
