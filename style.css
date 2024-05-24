@@ -49,14 +49,30 @@ label {
     display: block;
     margin-bottom: 5px;
 }
+.campo-formulario {
+    max-width: 300px;
+    margin: 0 auto 15px auto;
+    box-sizing: border-box;
+}
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
+.login input[type="text"],
+.login input[type="email"],
+.login input[type="password"],
+.cadastro input[type="text"],
+.cadastro input[type="email"],
+.cadastro input[type="password"]
+{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
 input[type="number"],
 textarea,
 select {
-    width: 100%;
+    width: 100%; /* Largura padrão para outros tipos de input */
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -102,6 +118,7 @@ button[type="submit"]:hover {
 .login, .cadastro, .perfil {
     max-width: 400px;
     margin: 0 auto;
+    width: 90%;
 }
 
 /* Responsividade */

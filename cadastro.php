@@ -23,6 +23,10 @@
 
                 if (cadastrarUsuario($nome, $email, $senha, $tipo)) {
                     echo "<p class='sucesso'>Usuário cadastrado com sucesso!</p>";
+                    session_start();
+                    $_SESSION['emailCadastro'] = $email;
+                    header("Location: login.php");
+                    exit;
                 } else {
                     echo "<p class='erro'>Erro ao cadastrar usuário.</p>";
                 }
@@ -30,16 +34,16 @@
             ?>
             <form method="post">
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" required>
+                <input type="text" name="nome" id="nome" required class="campo-formulario" style="width: 90%;">
 
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required class="campo-formulario" style="width: 90%;">
 
                 <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha" required>
+                <input type="password" name="senha" id="senha" required class="campo-formulario" style="width: 90%;">
 
                 <label for="tipo">Tipo de Usuário:</label>
-                <select name="tipo" id="tipo">
+                <select name="tipo" id="tipo" style="width: 96%;">
                     <option value="individual">Individual</option>
                     <option value="empresa">Empresa</option>
                 </select>
