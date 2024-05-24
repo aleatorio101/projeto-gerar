@@ -1,0 +1,132 @@
+/* Estilização Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50; /* Verde */
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #4CAF50; /* Verde */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Verde */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Verde mais escuro */
+}
+
+.erro {
+    color: #f00;
+    font-weight: bold;
+}
+
+.sucesso {
+    color: #4CAF50; /* Verde */
+    font-weight: bold;
+}
+
+/* Estilização Específica */
+.hero {
+    text-align: center;
+    background-color: #795548; /* Marrom */
+    color: #fff;
+    padding: 3em 0;
+    border-radius: 5px;
+}
+
+.hero h2 {
+    color: #fff;
+}
+
+.login, .cadastro, .perfil {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+.tabela-residuos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-residuos th, .tabela-residuos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabela-residuos tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabela-residuos th {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
