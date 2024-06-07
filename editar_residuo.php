@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 <label for="descarte">Descarte:</label>
                 <input type="text" name="descarte" id="descarte" value="<?php echo $residuo['descarte']; ?>" required class="campo-formulario">
-
+                <br>
                 <button type="submit">Salvar Alterações</button>
             </form>
         </section>
