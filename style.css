@@ -1,79 +1,79 @@
 /* Estilização Geral */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f2f2f2;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #333;
 }
 
 header {
-    background-color: #4CAF50; /* Verde */
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
+  background-color: #4CAF50; /* Verde */
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-left: 20px;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 section {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #4CAF50; /* Verde */
+  color: #4CAF50; /* Verde */
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 .botao-verde {
-    display: inline-block;
-    padding: 8px 12px;
-    margin: 2px;
-    background-color: #4CAF50; /* Cor verde */
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 2px;
+  background-color: #4CAF50; /* Cor verde */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
 
 .botao-verde:hover {
-    background-color: #218838; 
+  background-color: #218838; 
 }
 
 
 .botao-verde:active {
-    background-color: #1e7e34; 
+  background-color: #1e7e34; 
 }
 
 .campo-formulario {
-    max-width: 300px;
-    margin: 0 auto 15px auto;
-    box-sizing: border-box;
+  max-width: 300px;
+  margin: 0 auto 15px auto;
+  box-sizing: border-box;
 }
 
 .login input[type="text"],
@@ -84,94 +84,234 @@ label {
 .cadastro input[type="password"]
 
 {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
 .acao-residuo {
-    color: black;
-    text-decoration: none;  
-  }
+  color: black;
+  text-decoration: none;  
+}
 
 input[type="number"],
 input[type="text"],
 textarea,
 select {
-    width: 90%; /* Largura padrão para outros tipos de input */
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+  width: 90%; /* Largura padrão para outros tipos de input */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
 button[type="submit"] {
-    background-color: #4CAF50; /* Verde */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+  background-color: #4CAF50; /* Verde */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: #45a049; /* Verde mais escuro */
+  background-color: #45a049; /* Verde mais escuro */
 }
 
 .erro {
-    color: #f00;
-    font-weight: bold;
+  color: #f00;
+  font-weight: bold;
 }
 
 .sucesso {
-    color: #4CAF50; /* Verde */
-    font-weight: bold;
+  color: #4CAF50; /* Verde */
+  font-weight: bold;
 }
 
 /* Estilização Específica */
 .hero {
-    text-align: center;
-    background-color: #795548; /* Marrom */
-    color: #fff;
-    padding: 3em 0;
-    border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 5em 2em;
+  text-align: left; 
+  background-color: #f8f8f8;
+}
+
+.hero-content {
+  flex: 1;
+  align-items: center;
+  padding-right: 2em; /* Espaçamento entre conteúdo e imagem */
+  max-width: 600px; /* Largura máxima do conteúdo */
+}
+
+.hero-image {
+  flex: 1;
+  opacity: 0; /* Inicia a imagem com opacidade 0 */
+  animation: slide-in-right 1s ease forwards; /* Animação da imagem */
+  animation-delay: 0.5s; /* Atraso na animação da imagem */
 }
 
 .hero h2 {
-    color: #fff;
+display: flex;
+align-items: center;
+color: #000000; 
+font-size: 3em; 
+margin-bottom: 0.5em;
 }
 
+.hero p {
+display: flex;
+align-items: center;
+color: #000000; 
+font-size: 1.2em;
+line-height: 1.6; 
+margin-bottom: 1.5em;
+}
+
+
 .login, .cadastro, .perfil {
-    max-width: 400px;
-    margin: 0 auto;
-    width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 90%;
 }
 
 /* Responsividade */
 @media screen and (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+  .hero {
+      flex-direction: column; /* Altera a direção do flexbox para coluna */
+  }
+  .hero-content, .hero-image {
+      flex: 0 0 100%; /* Faz com que os elementos ocupem 100% da largura */
+  }
 }
 .tabela-residuos {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .tabela-residuos th, .tabela-residuos td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
 .tabela-residuos tr:nth-child(even) {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .tabela-residuos th {
-    background-color: #4CAF50; /* Verde */
-    color: white;
+  background-color: #4CAF50; /* Verde */
+  color: white;
+}
+
+.section-destaque {
+  background-color: #795548;
+  padding: 4em 2em;
+  text-align: left; 
+}
+
+.container { 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.destaque-content {
+  flex: 1;
+  padding-right: 2em; 
+}
+
+.destaque-image {
+  flex: 1;
+  opacity: 0;
+  animation: slide-in-right 1s ease forwards;
+  animation-delay: 0.5s; 
+}
+
+/* Títulos e Parágrafo na Seção de Destaque */
+.destaque-content h3 {
+  color: #4CAF50; /* Verde - Mantendo a cor do seu código */
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.destaque-content p {
+  color: #333; /* Mantendo a cor do seu código */
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 1.5em;
+}
+
+/* Botão - Pode usar o .botao-verde que você já tem */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Verde */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Animações */ 
+.animate-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.destaque-content .animate-text { 
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.destaque-content .animate-text:nth-child(1) {
+  animation-delay: 0.3s; 
+}
+
+.destaque-content .animate-text:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* ... seus estilos existentes ... */
+
+.hero .contatos {
+  margin-top: 2em;  /* Espaçamento superior */
+}
+
+.contatos p {
+  margin-bottom: 0.5em; /* Espaçamento entre os itens de contato */
+  color: white;
+  text-align: center; /* Centraliza o texto dos contatos */
+}
+
+.contato-label {
+  font-weight: bold;
+  margin-right: 0.5em; /* Espaçamento entre o label e o link */
+}
+
+.contatos a {
+  color: #4CAF50; /* Cor do link - Use a cor que você usa para links */
+  text-decoration: none; 
+}
+
+.contatos a:hover {
+  text-decoration: underline;
 }
