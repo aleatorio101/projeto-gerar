@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 <label for="senha">Senha:</label>
                 <input type="password" name="senha" id="senha" required class="campo-formulario" style="width: 90%;">
-
+                <br>
                 <button type="submit">Entrar</button>
             </form>
         </section>

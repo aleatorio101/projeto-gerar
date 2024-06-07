@@ -126,6 +126,29 @@ function listarResiduos($usuario_id) {
         echo "<p>Nenhum resíduo cadastrado.</p>";
     }
     ?>
+
+
+    <br>
+    <button id="btnColetar" class="button" onclick="window.location.href='coletar_residuos.php'">Coletar Meus Resíduos</button>
+
+    <script>
+        document.getElementById('btnColetar').addEventListener('click', function() {
+            abrirPopup();
+        });
+
+        function abrirPopup() {
+            document.getElementById('coletar-popup').style.display = 'block';
+        }
+
+        function fecharPopup() {
+            document.getElementById('coletar-popup').style.display = 'none';
+        }
+    </script>
+    <script>
+    <?php if ($residuos->num_rows > 0) { ?>
+        document.getElementById('btnColetar').style.display = 'block';
+    <?php } ?>
+</script>
         </section>
     </main>
 </body>

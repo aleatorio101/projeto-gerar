@@ -61,5 +61,11 @@ function obterResiduoPorId($id) {
         return false; 
     }
 }
+function obterResiduosUsuario($usuario_id) {
+    global $conn;
+    $sql = "SELECT tipo, quantidade FROM residuos WHERE usuario_id = '$usuario_id'"; 
+    $result = $conn->query($sql);
+    return $result;
+}
 
 ?>

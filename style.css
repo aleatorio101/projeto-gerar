@@ -134,16 +134,17 @@ button[type="submit"]:hover {
 .hero {
   display: flex;
   align-items: center;
-  padding: 5em 2em;
+  justify-content: space-around;
+  padding: 50px 100px;
   text-align: left; 
   background-color: #f8f8f8;
 }
 
 .hero-content {
-  flex: 1;
-  align-items: center;
-  padding-right: 2em; /* Espaçamento entre conteúdo e imagem */
-  max-width: 600px; /* Largura máxima do conteúdo */
+  display: flex;
+  flex-direction: column;  /* Organiza os elementos em coluna */
+  align-items: center; /* Alinha os itens horizontalmente ao centro */
+  font-size: 9px;
 }
 
 .hero-image {
@@ -224,9 +225,9 @@ margin-bottom: 1.5em;
   margin: 0 auto;
 }
 
-.destaque-content {
-  flex: 1;
-  padding-right: 2em; 
+.destaque-image {
+  flex: 1; 
+  margin-left: 50px; 
 }
 
 .destaque-image {
@@ -234,6 +235,10 @@ margin-bottom: 1.5em;
   opacity: 0;
   animation: slide-in-right 1s ease forwards;
   animation-delay: 0.5s; 
+}
+
+.destaque-content {
+  flex: 1;
 }
 
 /* Títulos e Parágrafo na Seção de Destaque */
@@ -290,16 +295,19 @@ margin-bottom: 1.5em;
     opacity: 1;
   }
 }
-/* ... seus estilos existentes ... */
 
 .hero .contatos {
-  margin-top: 2em;  /* Espaçamento superior */
+  margin-top: 10px;  /* Espaçamento superior */
 }
 
-.contatos p {
-  margin-bottom: 0.5em; /* Espaçamento entre os itens de contato */
-  color: white;
+.contatos {
   text-align: center; /* Centraliza o texto dos contatos */
+    margin-top: 10px;  /* Adiciona espaçamento acima dos contatos */
+}
+
+.contatos a {
+  color: green;
+  text-decoration: none;
 }
 
 .contato-label {
@@ -307,11 +315,78 @@ margin-bottom: 1.5em;
   margin-right: 0.5em; /* Espaçamento entre o label e o link */
 }
 
-.contatos a {
+.contatos > a {
   color: #4CAF50; /* Cor do link - Use a cor que você usa para links */
   text-decoration: none; 
 }
 
 .contatos a:hover {
   text-decoration: underline;
+}
+
+.container-centralizado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.mensagem-coleta {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; 
+  text-align: center;
+}
+
+.residuos-coleta {
+  margin-top: 20px;
+}
+
+.residuos-coleta ul {
+  list-style: none;
+  padding: 0;
+}
+
+.residuos-coleta li {
+  margin-bottom: 5px;
+}
+
+.titulo-destaque { 
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.descricao-destaque {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 15px; 
+}
+
+.lista-destaque {
+  list-style-type: disc; 
+  margin-left: 40px; 
+}
+
+.destaque-image img {
+  max-width: 100%; 
+  height: auto; 
 }
