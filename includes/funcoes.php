@@ -1,10 +1,10 @@
 <?php
 include_once 'conexao.php';
 
-function cadastrarUsuario($nome, $email, $senha, $tipo) {
+function cadastrarUsuario($nome, $email, $senha, $tipo, $endereco) { // Adicionando $endereco
     global $conn;
     $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
-    $sql = "INSERT INTO usuarios (nome, email, senha, tipo) VALUES ('$nome', '$email', '$senhaHash', '$tipo')";
+    $sql = "INSERT INTO usuarios (nome, email, senha, tipo, endereco) VALUES ('$nome', '$email', '$senhaHash', '$tipo', '$endereco')"; 
     return $conn->query($sql);
 }
 
@@ -19,6 +19,8 @@ function logarUsuario($email, $senha) {
             $_SESSION['usuario_nome'] = $row['nome'];
             $_SESSION['usuario_tipo'] = $row['tipo'];
             $_SESSION['usuario_email'] = $row['email'];
+            $_SESSION['usuario_enderco'] = $row['endereco'];
+            
             return true;
         }
     }

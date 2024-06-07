@@ -84,6 +84,7 @@ function listarResiduos($usuario_id) {
 
                 <label for="descarte">Descarte:</label>
                 <input type="text" name="descarte" id="descarte">
+                <br>
 
                 <button type="submit" name="cadastrar_residuo">Cadastrar</button>
             </form>

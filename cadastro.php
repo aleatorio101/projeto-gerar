@@ -20,8 +20,9 @@
                 $email = $_POST['email'];
                 $senha = $_POST['senha'];
                 $tipo = $_POST['tipo'];
+                $endereco = $_POST['endereco'];
 
-                if (cadastrarUsuario($nome, $email, $senha, $tipo)) {
+                if (cadastrarUsuario($nome, $email, $senha, $tipo, $endereco)) {
                     echo "<p class='sucesso'>Usuário cadastrado com sucesso!</p>";
                     session_start();
                     $_SESSION['emailCadastro'] = $email;
@@ -41,6 +42,9 @@
 
                 <label for="senha">Senha:</label>
                 <input type="password" name="senha" id="senha" required class="campo-formulario" style="width: 90%;">
+
+                <label for="endereço">Endereço:</label>
+                <input type="text" name="endereco" id="endereco" required class="campo-formulario" style="width: 90%;">
 
                 <label for="tipo">Tipo de Usuário:</label>
                 <select name="tipo" id="tipo" style="width: 96%;">
