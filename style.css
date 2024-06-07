@@ -390,3 +390,34 @@ margin-bottom: 1.5em;
   max-width: 100%; 
   height: auto; 
 }
+.depoimentos {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.depoimentos h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.depoimento {
+  display: inline-block; 
+  margin: 0 20px 20px 20px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 30%; /* Ajuste conforme necessário */
+  vertical-align: top; 
+}
+
+.depoimento img {
+  width: 100px; /* Ajuste conforme necessário */
+  height: 100px; /* Ajuste conforme necessário */
+  border-radius: 50%; 
+  margin-bottom: 10px;
+}
+
+.depoimento p {
+  font-style: italic;
+  text-align: left; 
+}

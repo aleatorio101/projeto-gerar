@@ -33,6 +33,19 @@
         <img src="39479adb93c6d9f892449c8698d20850.png" alt="Imagem de Destaque" class="slide-in-right">
       </div>
     </div>
+    </section>
+    <div class="depoimentos"> 
+        <h2 style="color: green">O que nossos clientes dizem:</h2>
+        <div class="depoimento">
+          <p>"A implementação do EcoTrack foi um divisor de águas para a nossa empresa. A plataforma nos permitiu otimizar todo o processo de gestão de resíduos, desde o mapeamento até o descarte final, garantindo a conformidade com a legislação ambiental e a redução de custos. Estamos muito satisfeitos com os resultados!" - Ana Silva, Gerente de Sustentabilidade, BioTech Solutions</p>
+        </div>
+        <div class="depoimento">
+          <p>"O EcoTrack facilitou muito a nossa comunicação com as cooperativas de reciclagem parceiras. Através da plataforma, podemos agendar coletas, monitorar o trajeto dos nossos resíduos e gerar relatórios detalhados, o que nos ajuda a aprimorar constantemente as nossas práticas de sustentabilidade." - João Oliveira, Supervisor de Logística, Green Logistics</p>
+        </div>
+        <div class="depoimento">
+          <p>"Com o EcoTrack, finalmente conseguimos ter uma visão completa e integrada de toda a gestão de resíduos da nossa rede de restaurantes. A plataforma é fácil de usar e nos permite acompanhar os indicadores chave de cada unidade, o que facilita a tomada de decisão e a implementação de ações mais sustentáveis." - Maria Souza, Coordenadora de Responsabilidade Social, Sabor & Saúde Alimentos</p>
+        </div>
+      </div>
   </section>
 
   <main>
